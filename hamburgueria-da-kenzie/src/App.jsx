@@ -5,7 +5,7 @@ import Container from './Components/Container/';
 import Header from './Components/Header';
 import InputSearch from './Components/InputSearch/InputSearch';
 import { api } from './Services/api';
-import { toast, ToastContainer } from 'react-toastify';
+import { toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 
 const App = () => {
@@ -72,8 +72,6 @@ const App = () => {
     setCart([]);
     setTotal(0);
   };
-
-  console.log(cart);
 
   return (
     <>

@@ -1,8 +1,6 @@
-import React, { useEffect, useState } from 'react';
-import { api } from '../../Services/api';
+import React from 'react';
 import Button from '../Button/Button';
 import Container from '../Container';
-import Img from '../Img/img';
 import Typography from '../Typography';
 import { StyledCard, StyledUl } from './StyledCard';
 
@@ -13,7 +11,7 @@ const Card = ({ filter, addCart }) => {
       {filter.map((element) => (
         <StyledCard id={element.id} key={element.id}>
           <figure className='d-flex justify-content-center align-items-center'>
-            <img src={element.img} />
+            <img src={element.img} alt={element.name}/>
           </figure>
           <Container containerBg>
             <Typography tag="h2">{element.name}</Typography>

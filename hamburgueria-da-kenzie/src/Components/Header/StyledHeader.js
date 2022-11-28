@@ -55,7 +55,7 @@ export const StyledDivHeader = styled.div`
 
     @media (max-width: 380px) {
       right: 10%;
-      top: 85px !important;
+      top: 80px !important;
     }
   }
 `;
